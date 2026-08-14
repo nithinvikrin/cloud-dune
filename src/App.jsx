@@ -8,6 +8,7 @@ import ContactCTA from './components/ContactCTA';
 import Footer from './components/Footer';
 import WaveDivider from './components/WaveDivider';
 import DemoModal from './components/DemoModal';
+import WhatsAppWidget from './components/WhatsAppWidget';
 
 export default function App() {
   const [demoModalOpen, setDemoModalOpen] = useState(false);
@@ -27,7 +28,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-800 flex flex-col font-sans antialiased selection:bg-primary/20 selection:text-primary">
+    <div className="min-h-screen bg-white text-slate-800 flex flex-col font-sans antialiased selection:bg-primary/20 selection:text-primary relative">
       {/* 1. Navbar */}
       <Navbar onOpenDemoModal={handleOpenDemoModal} />
 
@@ -61,9 +62,13 @@ export default function App() {
       {/* 7. Footer */}
       <Footer />
 
-      {/* 8. Demo Modal */}
+      {/* 8. Floating WhatsApp Widget */}
+      <WhatsAppWidget />
+
+      {/* 9. Demo Modal */}
       <DemoModal isOpen={demoModalOpen} onClose={handleCloseDemoModal} />
     </div>
   );
 }
+
 
