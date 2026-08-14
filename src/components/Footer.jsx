@@ -84,9 +84,26 @@ export default function Footer() {
 
 
         </div>
+
+        {/* Bottom Credit & Copyright */}
+        <div className="mt-12 pt-8 border-t border-[#e3e8f0] flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#869ab8]">
+          <p>© {new Date().getFullYear()} Cloud Dune. All rights reserved.</p>
+          <p className="font-medium">
+            Designed &amp; Developed by{' '}
+            <a
+              href="https://www.vikrin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#335eea] hover:underline font-semibold"
+            >
+              Vikrin Pvt Ltd
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
 }
+
 
 
