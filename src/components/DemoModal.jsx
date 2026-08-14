@@ -13,6 +13,11 @@ export default function DemoModal({ isOpen, onClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const subject = encodeURIComponent(`Demo Request from ${formData.firstName} ${formData.lastName}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nRequested Demo Session with Cloud Dune`
+    );
+    window.location.href = `mailto:info@clouddune.com?subject=${subject}&body=${body}`;
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
@@ -25,6 +30,7 @@ export default function DemoModal({ isOpen, onClose }) {
       onClose();
     }, 2500);
   };
+
 
   return (
     <AnimatePresence>

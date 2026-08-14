@@ -12,12 +12,18 @@ export default function ContactCTA() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const subject = encodeURIComponent(`New Inquiry from ${formData.name || 'Website Visitor'}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    window.location.href = `mailto:info@clouddune.com?subject=${subject}&body=${body}`;
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: '', email: '', message: '' });
     }, 3500);
   };
+
 
   return (
     <section className="py-12 md:py-24 bg-[#1b2a4e] text-white relative overflow-hidden" id="contact">
