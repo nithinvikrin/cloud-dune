@@ -112,13 +112,21 @@ export default function Services({ onSelectService }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              onClick={() => onSelectService && onSelectService(service)}
-              className="bg-white rounded-lg p-6 sm:p-8 shadow-bs border border-slate-100/70 lift transition-all duration-300 flex flex-col justify-between cursor-pointer group"
+              onClick={() => {
+                const text = encodeURIComponent(`Hello Cloud Dune, I am interested in your ${service.title} services.`);
+                window.open(`https://wa.me/18135206937?text=${text}`, '_blank', 'noopener,noreferrer');
+              }}
+              className="bg-white rounded-lg p-6 sm:p-8 shadow-bs border border-slate-100/70 lift transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:border-[#25D366]"
             >
               <div>
-                {/* Icon Container */}
-                <div className="mb-4 text-[#335eea]">
-                  {service.svg}
+                {/* Icon & Arrow Row */}
+                <div className="flex items-center justify-between mb-4">
+                  <div className="text-[#335eea]">
+                    {service.svg}
+                  </div>
+                  <span className="text-xs font-semibold text-[#25D366] opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                    Chat on WhatsApp →
+                  </span>
                 </div>
 
                 {/* Title */}
@@ -134,6 +142,7 @@ export default function Services({ onSelectService }) {
             </motion.div>
           ))}
         </div>
+
 
       </div>
     </section>
