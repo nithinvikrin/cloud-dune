@@ -54,21 +54,22 @@ export default function ContactCTA() {
             className="flex flex-row items-center justify-center gap-3 mb-10"
           >
             <a
-              href="tel:9042978190"
+              href="tel:+18135206937"
               className="inline-flex items-center justify-center gap-2 bg-[#335eea] hover:bg-[#294bbb] text-white text-[16px] font-semibold px-5 py-3 rounded-md shadow-bs lift transition-all"
             >
               <Phone className="w-4 h-4" />
-              (904) 297-8190
+              +1 813-520-6937
             </a>
 
             <a
-              href="mailto:info@concisecloudsolutions.com"
+              href="mailto:info@clouddune.com"
               className="inline-flex items-center justify-center gap-2 bg-transparent hover:bg-white/10 text-white border border-white/30 text-[16px] font-semibold px-5 py-3 rounded-md lift transition-all"
             >
               <Mail className="w-4 h-4" />
-              info@concisecloudsolutions.com
+              info@clouddune.com
             </a>
           </motion.div>
+
 
           {/* Direct Inquiry Form */}
           <motion.div

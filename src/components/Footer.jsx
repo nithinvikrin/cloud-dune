@@ -22,14 +22,14 @@ export default function Footer() {
             <p className="text-[#506690] mb-2 font-normal text-[16px]">
               Cloud & AI experts.
             </p>
-            <p className="text-[#506690] mb-1 text-[15px] font-normal">
-              <a href="tel:9042978190" className="hover:text-[#335eea] transition-colors">
-                (904) 297-8190
+            <p className="text-[#506690] mb-[2px] text-[15px] font-normal">
+              <a href="tel:+18135206937" className="hover:text-[#335eea] transition-colors">
+                +1 813-520-6937
               </a>
             </p>
             <p className="text-[15px] font-normal">
-              <a href="mailto:info@concisecloudsolutions.com" className="text-[#506690] hover:text-[#335eea] transition-colors">
-                info@concisecloudsolutions.com
+              <a href="mailto:info@clouddune.com" className="text-[#506690] hover:text-[#335eea] transition-colors">
+                info@clouddune.com
               </a>
             </p>
           </div>
@@ -70,17 +70,18 @@ export default function Footer() {
             </h6>
             <ul className="space-y-3 text-[15px] text-[#869ab8] font-normal">
               <li>
-                <a href="tel:9042978190" className="hover:text-[#335eea] transition-colors">
-                  (904) 297-8190
+                <a href="tel:+18135206937" className="hover:text-[#335eea] transition-colors">
+                  +1 813-520-6937
                 </a>
               </li>
               <li>
-                <a href="mailto:info@concisecloudsolutions.com" className="hover:text-[#335eea] transition-colors">
-                  info@concisecloudsolutions.com
+                <a href="mailto:info@clouddune.com" className="hover:text-[#335eea] transition-colors">
+                  info@clouddune.com
                 </a>
               </li>
             </ul>
           </div>
+
 
         </div>
       </div>
