@@ -8,13 +8,17 @@ export default function Footer() {
           
           {/* Brand Column */}
           <div className="md:col-span-4 lg:col-span-3">
-            <a href="#" className="inline-block mb-3">
+            <a href="#" className="flex items-center gap-2 mb-3">
               <img
-                src="/assets/img/brand.svg"
-                alt="Concise Cloud Solutions"
-                className="h-7 w-auto object-contain"
+                src="/assets/img/logo.png"
+                alt="Cloud Dune"
+                className="h-8 w-auto object-contain"
               />
+              <span className="text-[20px] font-bold text-[#1b2a4e] tracking-tight font-sans">
+                Cloud Dune
+              </span>
             </a>
+
             <p className="text-[#506690] mb-2 font-normal text-[16px]">
               Cloud & AI experts.
             </p>

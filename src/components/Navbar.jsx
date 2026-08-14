@@ -35,13 +35,17 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-8">
           
           {/* Brand Logo */}
-          <a href="#" className="flex items-center">
+          <a href="#" className="flex items-center gap-2.5">
             <img
-              src="/assets/img/brand.svg"
-              alt="Concise Cloud Solutions"
-              className="h-8 md:h-[34px] w-auto object-contain"
+              src="/assets/img/logo.png"
+              alt="Cloud Dune"
+              className="h-9 md:h-10 w-auto object-contain"
             />
+            <span className="text-[22px] font-bold text-[#1b2a4e] tracking-tight font-sans">
+              Cloud Dune
+            </span>
           </a>
+
 
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-10">
