@@ -27,10 +27,10 @@ export default function CostCalculator({ onOpenDemoModal }) {
 
   return (
     <section className="py-16 md:py-24 bg-white border-t border-slate-200/60 relative" id="calculator">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-14">
+        <div className="max-w-4xl mx-auto text-center mb-14">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-200/60">
             <Calculator className="w-4 h-4 text-emerald-600" />
             Interactive Tool

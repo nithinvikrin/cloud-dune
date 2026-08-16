@@ -31,7 +31,7 @@ export default function Navbar() {
           : 'bg-white py-4'
       }`}
     >
-      <div className="max-w-[1040px] mx-auto px-4 sm:px-6">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         <div className="flex items-center justify-between h-8">
           
           {/* Brand Logo */}

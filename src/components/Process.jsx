@@ -61,10 +61,10 @@ export default function Process() {
 
   return (
     <section className="py-12 md:py-24 bg-white" id="how-we-work">
-      <div className="max-w-[1040px] mx-auto px-4 sm:px-6">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         
         {/* Section Header */}
-        <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
           <span className="inline-block px-3 py-1 rounded-full bg-[#d6dffb] text-[#335eea] text-[12px] font-semibold uppercase tracking-wider mb-3">
             How We Work
           </span>

@@ -3,7 +3,7 @@ import React from 'react';
 export default function Footer() {
   return (
     <footer className="py-12 md:py-16 bg-[#f1f4f8] text-[#506690]">
-      <div className="max-w-[1040px] mx-auto px-4 sm:px-6">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           
           {/* Brand Column */}

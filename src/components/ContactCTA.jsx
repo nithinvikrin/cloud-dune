@@ -27,8 +27,8 @@ export default function ContactCTA() {
 
   return (
     <section className="py-12 md:py-24 bg-[#1b2a4e] text-white relative overflow-hidden" id="contact">
-      <div className="max-w-[1040px] mx-auto px-4 sm:px-6 relative z-10">
-        <div className="max-w-2xl mx-auto text-center">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
           
           {/* Main Heading */}
           <motion.h2

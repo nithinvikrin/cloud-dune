@@ -64,7 +64,7 @@ export default function Features() {
 
   return (
     <section className="py-12 md:py-24 bg-white border-b border-[#f1f4f8]">
-      <div className="max-w-[1040px] mx-auto px-4 sm:px-6">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <motion.div

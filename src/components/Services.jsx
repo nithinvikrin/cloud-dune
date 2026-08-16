@@ -91,10 +91,10 @@ export default function Services({ onSelectService }) {
 
   return (
     <section className="py-12 md:py-24 bg-[#f9fbfd]" id="services">
-      <div className="max-w-[1040px] mx-auto px-4 sm:px-6">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         
         {/* Section Header */}
-        <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
           <h2 className="text-[26px] sm:text-[31px] font-bold text-[#1b2a4e] tracking-tight mb-3 font-sans">
             What We Do
           </h2>

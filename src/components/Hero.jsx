@@ -4,8 +4,8 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="pt-16 pt-md-24 pb-12 md:pb-20 bg-white">
-      <div className="max-w-[1040px] mx-auto px-4 sm:px-6">
+    <section className="pt-24 md:pt-32 pb-12 md:pb-24 bg-white">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
           
           {/* Right Image Column (Mobile top, Desktop right order-2) */}
@@ -18,7 +18,7 @@ export default function Hero() {
             <img
               src="/assets/img/illustration-2.png"
               alt="Cloud & AI Solutions"
-              className="w-full max-w-[460px] h-auto object-contain mb-6 md:mb-0"
+              className="w-full max-w-[620px] h-auto object-contain mb-6 md:mb-0"
             />
           </motion.div>
 
@@ -30,13 +30,13 @@ export default function Hero() {
             className="md:col-span-7 lg:col-span-6 md:order-1 text-center md:text-left"
           >
             {/* Headline */}
-            <h1 className="text-[36px] sm:text-[44px] lg:text-[48px] leading-[1.12] font-normal text-[#1b2a4e] tracking-tight mb-5">
+            <h1 className="text-[38px] sm:text-[50px] lg:text-[56px] xl:text-[62px] leading-[1.1] font-normal text-[#1b2a4e] tracking-tight mb-5">
               Cloud & AI Solutions. <br />
               <span className="text-[#335eea]">Built for Speed.</span>
             </h1>
 
             {/* Paragraph */}
-            <p className="text-[18px] sm:text-[20px] text-[#869ab8] font-normal leading-[1.6] mb-8 max-w-[480px] mx-auto md:mx-0">
+            <p className="text-[19px] sm:text-[21px] text-[#869ab8] font-normal leading-[1.6] mb-8 max-w-2xl mx-auto md:mx-0">
               We turn ideas into working software fast. From cloud infrastructure to intelligent applications, we prototype quickly, iterate with you, and deliver results that stick.
             </p>
 
