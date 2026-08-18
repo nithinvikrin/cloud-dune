@@ -1,83 +1,63 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import {
+  DiscoverIllustration,
+  PrototypeIllustration,
+  IterateIllustration,
+  LaunchSupportIllustration,
+} from './ProcessIllustrations';
 
 export default function Process() {
   const steps = [
     {
+      id: 1,
       title: '1. Discover',
       description:
         'We start by listening. We learn your goals, constraints, and what success looks like — then map out a clear path to get there.',
-      svg: (
-        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path d="M0 0h24v24H0z" />
-            <path fill="#335EEA" opacity=".3" d="M5 15l-2 6.5 6.5-2z" />
-            <path d="M13.5 21a9.5 9.5 0 110-19 9.5 9.5 0 010 19zm-5-8a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#335EEA" />
-          </g>
-        </svg>
-      ),
+      illustration: <DiscoverIllustration />,
     },
     {
+      id: 2,
       title: '2. Prototype',
       description:
         'We deliver a working prototype quickly so you can see the direction, give feedback, and make decisions based on something real.',
-      svg: (
-        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path d="M0 0h24v24H0z" />
-            <path d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z" fill="#335EEA" />
-            <rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16" rx="1" />
-          </g>
-        </svg>
-      ),
+      illustration: <PrototypeIllustration />,
     },
     {
+      id: 3,
       title: '3. Iterate',
       description:
         'We refine together — short feedback loops, regular check-ins, and continuous improvement until the solution is exactly right.',
-      svg: (
-        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path d="M0 0h24v24H0z" />
-            <path d="M8.433 7.174l.975.683a.5.5 0 01-.13.884L5.89 9.858a.5.5 0 01-.657-.461L5.136 5.84a.5.5 0 01.787-.423l.806.564A8 8 0 114 12h2.001a6 6 0 102.433-4.826z" fill="#335EEA" />
-          </g>
-        </svg>
-      ),
+      illustration: <IterateIllustration />,
     },
     {
+      id: 4,
       title: '4. Launch & Support',
       description:
         'We take you live with confidence — and stay engaged to monitor, support, and scale as your needs evolve.',
-      svg: (
-        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path d="M0 0h24v24H0z" />
-            <path d="M17.738 6.352a1 1 0 111.524 1.296l-8.5 10a1 1 0 01-1.426.1l-4.5-4a1 1 0 111.328-1.495l3.736 3.32 7.838-9.22z" fill="#335EEA" />
-          </g>
-        </svg>
-      ),
+      illustration: <LaunchSupportIllustration />,
     },
   ];
 
   return (
-    <section className="py-14 md:py-24 bg-custom-lightblue border-b border-custom-grey" id="how-we-work">
+    <section className="py-14 sm:py-20 lg:py-24 bg-[#F5F7F8] border-b border-slate-200/60 relative overflow-hidden" id="how-we-work">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         
         {/* Section Header */}
-        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-custom-softblue text-[#1b2a4e] text-[13px] font-bold uppercase tracking-wider mb-3 border border-custom-grey">
+        <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <span className="inline-block px-3.5 py-1 rounded-md bg-blue-50 text-[#2563EB] text-xs font-bold uppercase tracking-wider mb-3 border border-blue-200/80 shadow-sm">
             How We Work
           </span>
-          <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1b2a4e] tracking-tight mb-3">
-            From idea to production, <span className="text-[#335eea]">together</span>.
+          <h2 className="text-[32px] sm:text-[42px] font-extrabold text-[#172B55] tracking-tight mb-3 font-sans me-0">
+            From idea to production, <span className="text-[#2563EB]">together</span>.
           </h2>
-          <p className="text-[17px] sm:text-[19px] text-slate-700 leading-[1.6] font-normal">
+          <p className="text-[16px] sm:text-[18px] text-[#506690] leading-[1.65] font-normal me-0">
             Our process is built around collaboration and speed. No long discovery phases or months of silence — you'll see real progress from day one.
           </p>
         </div>
 
         {/* 4 Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 me-0">
           {steps.map((step, index) => (
             <motion.div
               key={step.title}
@@ -85,22 +65,24 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="bg-white/95 backdrop-blur-sm p-6 sm:p-7 rounded-xl border border-custom-grey shadow-bs-sm hover:border-primary transition-all duration-300 text-center flex flex-col items-center"
+              className="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-[0_4px_20px_rgba(23,43,85,0.03)] hover:shadow-[0_12px_30px_rgba(23,43,85,0.08)] hover:border-primary/50 transition-all duration-300 text-center flex flex-col items-center justify-between group me-0"
             >
-              {/* Step Icon */}
-              <div className="mb-4 text-[#335eea] p-3 bg-custom-softblue rounded-full border border-custom-grey/60 flex justify-center items-center">
-                {step.svg}
+              <div className="flex flex-col items-center text-center me-0">
+                {/* Illustration Box */}
+                <div className="mb-5 flex justify-center items-center transform group-hover:scale-105 transition-transform duration-300 me-0">
+                  {step.illustration}
+                </div>
+
+                {/* Step Title */}
+                <h3 className="text-[20px] font-bold text-[#172B55] mb-2.5 font-sans group-hover:text-[#2563EB] transition-colors me-0">
+                  {step.title}
+                </h3>
+
+                {/* Step Description */}
+                <p className="text-[15px] sm:text-[15.5px] text-[#506690] leading-[1.6] font-normal me-0">
+                  {step.description}
+                </p>
               </div>
-
-              {/* Step Title */}
-              <h3 className="text-[20px] font-bold text-[#1b2a4e] mb-2 font-sans">
-                {step.title}
-              </h3>
-
-              {/* Step Description */}
-              <p className="text-[15px] sm:text-[16px] text-slate-600 leading-[1.6] font-normal">
-                {step.description}
-              </p>
             </motion.div>
           ))}
         </div>
@@ -109,5 +91,3 @@ export default function Process() {
     </section>
   );
 }
-
-
