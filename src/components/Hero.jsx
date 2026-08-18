@@ -18,6 +18,8 @@ export default function Hero({ onOpenDemoModal }) {
     },
   };
 
+  
+
   const itemVariants = {
     hidden: { opacity: 0, y: 16 },
     visible: {
