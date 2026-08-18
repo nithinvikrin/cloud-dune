@@ -54,17 +54,17 @@ export default function Features() {
             >
               <div>
                 {/* Illustration Box */}
-                <div className="mb-5 flex items-center justify-start transform group-hover:scale-105 transition-transform duration-300 me-0">
+                <div className="mb-5 flex items-center justify-start transform group-hover:scale-105 transition-transform duration-300">
                   {feature.illustration}
                 </div>
 
                 {/* Title */}
-                <h3 className="text-[20px] font-bold text-[#172B55] mb-2.5 font-sans group-hover:text-[#2563EB] transition-colors me-0">
+                <h3 className="text-[20px] font-bold text-[#172B55] mb-2.5 font-sans group-hover:text-[#2563EB] transition-colors">
                   {feature.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-[15px] sm:text-[15.5px] text-[#506690] leading-[1.6] font-normal me-0">
+                <p className="text-[15px] sm:text-[15.5px] text-[#506690] leading-[1.6] font-normal">
                   {feature.description}
                 </p>
               </div>

@@ -23,6 +23,20 @@ export default function Navbar() {
     { name: 'Contact Us', href: '#contact' },
   ];
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+
+    const targetId = href.replace('#', '');
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      setTimeout(() => {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 50);
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -35,7 +49,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-8">
           
           {/* Brand Logo */}
-          <a href="#" className="flex items-center gap-2.5">
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="flex items-center gap-2.5"
+          >
             <img
               src="/assets/img/logo.png"
               alt="Cloud Dune"
@@ -46,21 +67,19 @@ export default function Navbar() {
             </span>
           </a>
 
-
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="text-[17px] font-medium text-[#506690] hover:text-[#335eea] transition-colors"
               >
                 {link.name}
               </a>
             ))}
           </nav>
-
-
 
           {/* Mobile Menu Toggle Button */}
           <div className="flex md:hidden items-center">
@@ -91,7 +110,7 @@ export default function Navbar() {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, link.href)}
                   className="block px-3 py-2 text-base font-medium text-[#506690] hover:bg-slate-50 hover:text-[#335eea] rounded transition-colors"
                 >
                   {link.name}

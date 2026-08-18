@@ -77,7 +77,7 @@ export default function Services({ onSelectService }) {
   };
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white via-slate-50/60 to-[#F5F7F8] relative border-b border-slate-200/60 overflow-hidden" id="services">
+    <section className="scroll-mt-20 py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white via-slate-50/60 to-[#F5F7F8] relative border-b border-slate-200/60 overflow-hidden" id="services">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
         
         {/* Section Header */}

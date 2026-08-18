@@ -25,16 +25,16 @@ export default function ContactCTA() {
   };
 
   return (
-    <section className="py-14 sm:py-20 lg:py-24 bg-[#172B55] text-white relative overflow-hidden" id="contact">
+    <section className="scroll-mt-20 py-14 sm:py-20 lg:py-24 bg-[#172B55] text-white relative overflow-hidden" id="contact">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-        <div className="max-w-4xl mx-auto text-center me-0">
+        <div className="max-w-4xl mx-auto text-center">
           
           {/* Main Heading */}
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[32px] sm:text-[42px] lg:text-[48px] font-extrabold text-white tracking-tight mb-3 font-sans leading-[1.12] me-0"
+            className="text-[28px] sm:text-[42px] lg:text-[48px] font-extrabold text-white tracking-tight mb-3 font-sans leading-[1.12]"
           >
             Let's build something together.
           </motion.h2>
@@ -45,7 +45,7 @@ export default function ContactCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.08 }}
-            className="text-[16px] sm:text-[18px] text-white/80 font-normal leading-[1.6] mb-8 max-w-xl mx-auto me-0"
+            className="text-[15px] sm:text-[18px] text-white/80 font-normal leading-[1.6] mb-8 max-w-xl mx-auto"
           >
             Have an idea you want to move on? We'd love to hear about it. Reach out and let's talk about what's possible.
           </motion.p>
@@ -56,22 +56,22 @@ export default function ContactCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.12 }}
-            className="flex flex-row items-center justify-center gap-3 sm:gap-4 mb-10 me-0"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 max-w-sm sm:max-w-none mx-auto"
           >
             <a
               href="tel:+18135206937"
-              className="inline-flex items-center justify-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[15px] sm:text-[16px] font-semibold px-5 sm:px-6 py-3 rounded-xl shadow-md transition-all me-0"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[15px] sm:text-[16px] font-semibold px-6 py-3.5 rounded-xl shadow-md transition-all whitespace-nowrap"
             >
-              <Phone className="w-4 h-4 me-0" />
-              +1 813-520-6937
+              <Phone className="w-4 h-4 shrink-0" />
+              <span>+1 813-520-6937</span>
             </a>
 
             <a
               href="mailto:info@clouddune.com"
-              className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/25 text-[15px] sm:text-[16px] font-semibold px-5 sm:px-6 py-3 rounded-xl transition-all me-0"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/25 text-[15px] sm:text-[16px] font-semibold px-6 py-3.5 rounded-xl transition-all whitespace-nowrap"
             >
-              <Mail className="w-4 h-4 me-0" />
-              info@clouddune.com
+              <Mail className="w-4 h-4 shrink-0" />
+              <span>info@clouddune.com</span>
             </a>
           </motion.div>
 
@@ -81,20 +81,20 @@ export default function ContactCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.16 }}
-            className="bg-white/5 border border-white/15 rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-left max-w-lg mx-auto shadow-2xl backdrop-blur-sm me-0"
+            className="bg-white/5 border border-white/15 rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-left max-w-lg mx-auto shadow-2xl backdrop-blur-sm"
           >
             {submitted ? (
-              <div className="py-6 text-center space-y-2 me-0">
-                <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto me-0" />
-                <h4 className="text-xl font-bold text-white me-0">Message Received</h4>
-                <p className="text-slate-300 text-sm me-0">
+              <div className="py-6 text-center space-y-2">
+                <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto" />
+                <h4 className="text-xl font-bold text-white">Message Received</h4>
+                <p className="text-slate-300 text-sm">
                   Thank you! We will get back to you shortly.
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4 me-0">
-                <div className="me-0">
-                  <label className="block text-xs font-semibold text-slate-300 mb-1 me-0">
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label className="block text-xs font-semibold text-slate-300 mb-1">
                     Your Name
                   </label>
                   <input
@@ -103,12 +103,12 @@ export default function ContactCTA() {
                     placeholder="Full name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-[#0F172A]/80 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#2563EB] transition-colors me-0"
+                    className="w-full bg-[#0F172A]/80 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#2563EB] transition-colors"
                   />
                 </div>
 
-                <div className="me-0">
-                  <label className="block text-xs font-semibold text-slate-300 mb-1 me-0">
+                <div>
+                  <label className="block text-xs font-semibold text-slate-300 mb-1">
                     Email Address
                   </label>
                   <input
@@ -117,12 +117,12 @@ export default function ContactCTA() {
                     placeholder="name@company.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-[#0F172A]/80 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#2563EB] transition-colors me-0"
+                    className="w-full bg-[#0F172A]/80 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#2563EB] transition-colors"
                   />
                 </div>
 
-                <div className="me-0">
-                  <label className="block text-xs font-semibold text-slate-300 mb-1 me-0">
+                <div>
+                  <label className="block text-xs font-semibold text-slate-300 mb-1">
                     How can we help?
                   </label>
                   <textarea
@@ -131,15 +131,15 @@ export default function ContactCTA() {
                     placeholder="Tell us about your project or goals..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full bg-[#0F172A]/80 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#2563EB] transition-colors me-0"
+                    className="w-full bg-[#0F172A]/80 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#2563EB] transition-colors"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-semibold py-3.5 px-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-sm me-0"
+                  className="w-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-semibold py-3.5 px-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
                 >
-                  <Send className="w-4 h-4 me-0" />
+                  <Send className="w-4 h-4" />
                   Send Message
                 </button>
               </form>
