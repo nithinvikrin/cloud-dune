@@ -90,15 +90,18 @@ export default function Services({ onSelectService }) {
   ];
 
   return (
-    <section className="py-12 md:py-24 bg-[#f9fbfd]" id="services">
+    <section className="py-14 md:py-24 bg-custom-softblue border-b border-custom-grey" id="services">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         
         {/* Section Header */}
         <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-          <h2 className="text-[26px] sm:text-[31px] font-bold text-[#1b2a4e] tracking-tight mb-3 font-sans">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-custom-lightblue text-[#1b2a4e] text-[13px] font-bold uppercase tracking-wider mb-3 border border-custom-grey">
+            Services
+          </span>
+          <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1b2a4e] tracking-tight mb-3 font-sans">
             What We Do
           </h2>
-          <p className="text-[17px] sm:text-[19px] text-[#869ab8] leading-[1.6] font-normal">
+          <p className="text-[17px] sm:text-[19px] text-slate-700 leading-[1.6] font-normal">
             Broad expertise, focused delivery. We bring the right skills to every engagement.
           </p>
         </div>
@@ -116,12 +119,12 @@ export default function Services({ onSelectService }) {
                 const text = encodeURIComponent(`Hello Cloud Dune, I am interested in your ${service.title} services.`);
                 window.open(`https://wa.me/18135206937?text=${text}`, '_blank', 'noopener,noreferrer');
               }}
-              className="bg-white rounded-lg p-6 sm:p-8 shadow-bs border border-slate-100/70 lift transition-all duration-300 flex flex-col justify-between cursor-pointer group hover:border-[#25D366]"
+              className="bg-white rounded-xl p-6 sm:p-8 shadow-bs border border-custom-grey hover:bg-custom-lightblue/40 hover:border-primary lift transition-all duration-300 flex flex-col justify-between cursor-pointer group"
             >
               <div>
                 {/* Icon & Arrow Row */}
                 <div className="flex items-center justify-between mb-4">
-                  <div className="text-[#335eea]">
+                  <div className="text-[#335eea] p-2.5 bg-custom-lightblue rounded-lg border border-custom-grey/60">
                     {service.svg}
                   </div>
                   <span className="text-xs font-semibold text-[#25D366] opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
@@ -135,14 +138,13 @@ export default function Services({ onSelectService }) {
                 </h4>
 
                 {/* Description */}
-                <p className="text-[17px] text-[#869ab8] leading-[1.6] font-normal">
+                <p className="text-[15px] sm:text-[16px] text-slate-600 leading-[1.6] font-normal">
                   {service.description}
                 </p>
               </div>
             </motion.div>
           ))}
         </div>
-
 
       </div>
     </section>

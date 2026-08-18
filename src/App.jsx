@@ -28,7 +28,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-800 flex flex-col font-sans antialiased selection:bg-primary/20 selection:text-primary relative">
+    <div className="min-h-screen bg-custom-softblue text-slate-800 flex flex-col font-sans antialiased selection:bg-primary/20 selection:text-primary relative">
       {/* 1. Navbar */}
       <Navbar onOpenDemoModal={handleOpenDemoModal} />
 
@@ -43,8 +43,8 @@ export default function App() {
         {/* 4. Process Section (How We Work) */}
         <Process />
 
-        {/* Wave Divider to Services (bg-light / #f9fbfd) */}
-        <WaveDivider color="text-brandGray-100" />
+        {/* Wave Divider to Services (bg-custom-softblue / #E1E5E5) */}
+        <WaveDivider color="text-custom-softblue" />
 
         {/* 5. Services Section (What We Do) */}
         <Services onSelectService={handleSelectService} />
@@ -55,8 +55,8 @@ export default function App() {
         {/* 6. Contact / CTA Section */}
         <ContactCTA onOpenDemoModal={handleOpenDemoModal} />
 
-        {/* Wave Divider to Footer (bg-gray-200 / #f1f4f8) */}
-        <WaveDivider color="text-brandGray-200" />
+        {/* Wave Divider to Footer */}
+        <WaveDivider color="text-custom-lightblue" />
       </main>
 
       {/* 7. Footer */}

@@ -63,9 +63,9 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-12 md:py-24 bg-white border-b border-[#f1f4f8]">
+    <section className="py-14 md:py-24 bg-custom-softblue border-b border-custom-grey">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -73,20 +73,20 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="text-left"
+              className="bg-white/90 backdrop-blur-sm p-6 sm:p-7 rounded-xl border border-custom-grey shadow-bs-sm hover:border-primary hover:shadow-bs transition-all duration-300 text-left"
             >
               {/* Icon Container */}
-              <div className="mb-3 text-[#335eea]">
+              <div className="mb-4 text-[#335eea] p-2.5 bg-custom-lightblue inline-block rounded-lg border border-custom-grey/50">
                 {feature.svg}
               </div>
 
               {/* Title */}
-              <h3 className="text-[21px] font-normal text-[#1b2a4e] mb-2 font-sans">
+              <h3 className="text-[20px] font-bold text-[#1b2a4e] mb-2 font-sans">
                 {feature.title}
               </h3>
 
               {/* Description */}
-              <p className="text-[17px] text-[#869ab8] leading-[1.6] font-normal">
+              <p className="text-[15px] sm:text-[16px] text-slate-600 leading-[1.6] font-normal">
                 {feature.description}
               </p>
             </motion.div>

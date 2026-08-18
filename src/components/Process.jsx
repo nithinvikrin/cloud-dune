@@ -60,24 +60,24 @@ export default function Process() {
   ];
 
   return (
-    <section className="py-12 md:py-24 bg-white" id="how-we-work">
+    <section className="py-14 md:py-24 bg-custom-lightblue border-b border-custom-grey" id="how-we-work">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         
         {/* Section Header */}
         <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-          <span className="inline-block px-3 py-1 rounded-full bg-[#d6dffb] text-[#335eea] text-[12px] font-semibold uppercase tracking-wider mb-3">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-custom-softblue text-[#1b2a4e] text-[13px] font-bold uppercase tracking-wider mb-3 border border-custom-grey">
             How We Work
           </span>
-          <h2 className="text-[26px] sm:text-[31px] font-bold text-[#1b2a4e] tracking-tight mb-3">
+          <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1b2a4e] tracking-tight mb-3">
             From idea to production, <span className="text-[#335eea]">together</span>.
           </h2>
-          <p className="text-[17px] sm:text-[19px] text-[#869ab8] leading-[1.6] font-normal">
+          <p className="text-[17px] sm:text-[19px] text-slate-700 leading-[1.6] font-normal">
             Our process is built around collaboration and speed. No long discovery phases or months of silence — you'll see real progress from day one.
           </p>
         </div>
 
         {/* 4 Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={step.title}
@@ -85,20 +85,20 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="text-center"
+              className="bg-white/95 backdrop-blur-sm p-6 sm:p-7 rounded-xl border border-custom-grey shadow-bs-sm hover:border-primary transition-all duration-300 text-center flex flex-col items-center"
             >
               {/* Step Icon */}
-              <div className="mb-3 text-[#335eea] flex justify-center">
+              <div className="mb-4 text-[#335eea] p-3 bg-custom-softblue rounded-full border border-custom-grey/60 flex justify-center items-center">
                 {step.svg}
               </div>
 
               {/* Step Title */}
-              <h3 className="text-[21px] font-bold text-[#1b2a4e] mb-2 font-sans">
+              <h3 className="text-[20px] font-bold text-[#1b2a4e] mb-2 font-sans">
                 {step.title}
               </h3>
 
               {/* Step Description */}
-              <p className="text-[17px] text-[#869ab8] leading-[1.6] font-normal">
+              <p className="text-[15px] sm:text-[16px] text-slate-600 leading-[1.6] font-normal">
                 {step.description}
               </p>
             </motion.div>

@@ -26,12 +26,17 @@
   --bs-gray-800: #384c74;
   --bs-gray-900: #1b2a4e;
 
+  /* Custom palette additions */
+  --bs-custom-grey: #C6C3C3;
+  --bs-custom-light-blue: #E1E3E5;
+  --bs-custom-soft-blue: #E1E5E5;
+
   --bs-body-font-family: "HKGroteskPro", "Inter", system-ui, -apple-system, sans-serif;
   --bs-body-font-size: 1.0625rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.6;
   --bs-body-color: #869ab8;
-  --bs-body-bg: #ffffff;
+  --bs-body-bg: #e1e5e5;
   --bs-heading-color: #1b2a4e;
   --bs-border-color: #f1f4f8;
   --bs-box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);

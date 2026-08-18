@@ -64,7 +64,15 @@ export default {
         slate: {
           850: '#151F32',
           900: '#121D33',
-        }
+        },
+        custom: {
+          grey: '#C6C3C3',
+          lightblue: '#E1E3E5',
+          softblue: '#E1E5E5',
+        },
+        customGrey: '#C6C3C3',
+        customLightBlue: '#E1E3E5',
+        customSoftBlue: '#E1E5E5',
       },
       fontFamily: {
         sans: [
