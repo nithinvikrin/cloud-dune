@@ -45,13 +45,13 @@ export default function MountainIllustration() {
       initial={{ opacity: 0, scale: 0.96 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="relative w-full max-w-[660px] mx-auto aspect-[4/3] flex items-center justify-center select-none"
+      className="relative w-full max-w-[600px] mx-auto flex items-center justify-center select-none"
     >
       <svg
-        viewBox="0 0 660 520"
+        viewBox="0 0 660 485"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-full drop-shadow-xl overflow-visible"
+        className="w-full h-auto drop-shadow-xl overflow-visible"
       >
         <defs>
           {/* Sun & Glow Gradients */}

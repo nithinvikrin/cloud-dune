@@ -40,7 +40,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-14 sm:py-20 lg:py-24 bg-[#F5F7F8] border-b border-slate-200/60 relative overflow-hidden">
+    <section className="pt-2 sm:pt-4 pb-14 sm:pb-20 lg:pb-24 bg-[#F5F7F8] border-b border-slate-200/60 relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {features.map((feature, index) => (

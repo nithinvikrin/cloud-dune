@@ -28,7 +28,7 @@ export default function Hero({ onOpenDemoModal }) {
   };
 
   return (
-    <section className="pt-28 sm:pt-32 md:pt-36 pb-12 sm:pb-16 md:pb-24 bg-[#F5F7F8] relative overflow-hidden">
+    <section className="pt-24 sm:pt-28 md:pt-32 pb-4 sm:pb-8 lg:pb-16 bg-[#F5F7F8] relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
